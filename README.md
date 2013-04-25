@@ -1,4 +1,3 @@
-
 # xrpc
       
   An XML-RPC server middleware for Express running on Node.js
@@ -23,7 +22,7 @@
 
 ## Installation
 
-    $ npm install express-xmlrpc
+    $ npm install xrpc
 
 
 ## Features

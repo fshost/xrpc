@@ -92,6 +92,7 @@ exports.route = function route(handlers) {
     }
     return function (req, res, next) {
 
+        res.type('text/xml');
         var cb = function (err, rv) {
             if (!err) {
                 res.send(new XmlRpcResponse([rv]).xml());

@@ -6,9 +6,7 @@ var xrpc = require('..');
 
 var app = express();
 
-app.configure(function () {
-    app.use(xrpc.xmlRpc);
-});
+app.use(xrpc.xmlRpc);
 
 // example implementing one of the methods from the metaWeblog API (blogger.getUsersBlogs)
 // to test interaction use Windows Live Writer, MarsEdit, or other metaWeblog-compatible blogging client
@@ -53,7 +51,7 @@ app.post('/RPC', xrpc.route({
        getUserInfo: function(key, username, password, callback) {
            callback(null, { userid: 'user1', firstname: 'James', lastname: 'Hickok', nickname: 'Wild Bill', email: 'bill@hickok.com', url: 'http://billhickok.com', });
        },
-   }    
+   }
 }));
 
 

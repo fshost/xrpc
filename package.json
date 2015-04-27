@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "./xmlrpc.js",
   "dependencies": {
-    "node-xml": ">= 1.0.0"
+    "node-xml": ">= 1.0.0",
     "xmlbuilder": ">= 2.1.0"
   },
   "description": "Express middleware and router support for XML-RPC",

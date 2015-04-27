@@ -1,5 +1,3 @@
-
-
 var assert = require('assert');
 
 var os = require('os');
@@ -14,9 +12,7 @@ var app = express();
 
 var data = { test: 999 };
 
-app.configure(function () {
-    app.use(xrpc.xmlRpc);
-});
+app.use(xrpc.xmlRpc);
 
 app.post('/RPC', xrpc.route({
     echo: function (msg, callback) {

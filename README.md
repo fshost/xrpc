@@ -1,15 +1,13 @@
 # xrpc
-      
+
   An XML-RPC server middleware for Express running on Node.js
   built on [node](http://nodejs.org) for [Express](http://expressjs.com/).
-  
+
     var express = require('express'),
         xrpc = require('xrpc'),
         app = express();
 
-    app.configure(function () {
-        app.use(xrpc.xmlRpc);
-    });
+    app.use(xrpc.xmlRpc);
 
     app.post('/RPC', xrpc.route({
         echo: function (msg, callback) {
@@ -30,7 +28,7 @@
   * express middleware
   * platform-independent xml parser
   * includes a router to make using this module dead-simple
-  
+
 ## Examples
 
 See app.js in the example subdirectory for an example implementing one of the metaWeblog API methods
@@ -45,7 +43,7 @@ then run the test:
 
     $ npm test
 
-## License 
+## License
 
 (The MIT License)
 

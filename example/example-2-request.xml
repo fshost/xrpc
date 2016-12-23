@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><methodCall><methodName>handleNewRequest</methodName><params><param><value><struct><member><name>firstMember</name><value><string>982225245516</string></value></member><member><name>secondMember</name><value><string>theValueIsThisRightHere</string></value></member></struct></value></param></params></methodCall>

@@ -25,5 +25,6 @@ app.post('/RPC', xrpc.route({
 app.listen(3000);
 
 //Then send a request to http://localhost:3000/RPC if this is on localhost 
-//Sample request in ./example-2-request.xml and the expected response is ./example-2-response.xml
-//A very key thing to note is that Content-Type: header must be text/xml 
+//Sample request in ./example-2-request.xml and the expected response is shown in ./example-2-response.xml
+//A very key thing to note is that Content-Type: header must be text/xml. One way to test is to use:
+//curl -d @example-2-request.xml --header "Content-Type: text/xml" http://localhost:3000/RPC

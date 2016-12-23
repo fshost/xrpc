@@ -8,7 +8,7 @@
         app = express();
 
     app.use(xrpc.xmlRpc);
-
+    //Note that the Content-Type: of the request must be text/xml for this to work 
     app.post('/RPC', xrpc.route({
         echo: function (msg, callback) {
             callback(null, msg);
